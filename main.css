@@ -1,0 +1,35 @@
+.box {
+  background-color: aqua;
+  width: 600px;
+  height: 450px;
+  position: fixed;
+  top: 200px;
+  left: 400px;
+}
+
+.rArrow {
+  background-color: aquamarine;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 500px;
+  left: 340px;
+}
+
+.lArrow {
+  background-color: aquamarine;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 500px;
+  left: 1010px;
+}
+
+.item {
+  background-color: aquamarine;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 670px;
+  left: 675px;
+}
