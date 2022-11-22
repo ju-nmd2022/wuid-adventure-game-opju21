@@ -7,22 +7,22 @@
   left: 400px;
 }
 
-.rArrow {
-  background-color: aquamarine;
+.lArrow {
   width: 50px;
   height: 50px;
   position: fixed;
   top: 500px;
   left: 340px;
+  text-align: center;
 }
 
-.lArrow {
-  background-color: aquamarine;
+.rArrow {
   width: 50px;
   height: 50px;
   position: fixed;
   top: 500px;
   left: 1010px;
+  text-align: center;
 }
 
 .item {
