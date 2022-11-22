@@ -48,6 +48,37 @@ body {
   left: 400px;
 }
 
+.item {
+  background-color: antiquewhite;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 50px;
+  height: 40px;
+  position: fixed;
+  top: 670px;
+  left: 940px;
+}
+#FavNr {
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 95px;
+  height: 40px;
+  position: fixed;
+  left: 650px;
+  top: 220px;
+}
+
+#shovel {
+  background-color: rgb(246, 215, 250);
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 100px;
+  height: 300px;
+  position: fixed;
+  top: 300px;
+  left: 650px;
+}
+
 #ladder {
   width: 200px;
   height: 100px;
