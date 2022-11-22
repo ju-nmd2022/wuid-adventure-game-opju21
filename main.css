@@ -33,3 +33,38 @@
   top: 670px;
   left: 675px;
 }
+
+#ladder {
+  background-color: blue;
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  top: 500px;
+  left: 750px;
+}
+
+#shedd {
+  background-color: blue;
+  width: 200px;
+  height: 250px;
+  position: fixed;
+  top: 350px;
+  left: 750px;
+}
+#man {
+  background-color: blue;
+  width: 150px;
+  height: 200px;
+  position: fixed;
+  top: 450px;
+  left: 450px;
+}
+
+#key {
+  background-color: rgb(179, 255, 0);
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 350px;
+  left: 500px;
+}
