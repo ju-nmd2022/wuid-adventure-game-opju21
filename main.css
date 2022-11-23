@@ -58,14 +58,14 @@ body {
   top: 670px;
   left: 940px;
 }
-#FavNr {
-  padding-left: 15px;
-  padding-top: 10px;
-  width: 95px;
-  height: 40px;
+#nr {
+  background-color: antiquewhite;
+
+  width: 40px;
+  height: 20px;
   position: fixed;
-  left: 650px;
-  top: 220px;
+  left: 50px;
+  top: 10px;
 }
 
 #shovel {

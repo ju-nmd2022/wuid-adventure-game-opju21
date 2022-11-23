@@ -8,8 +8,10 @@ const man = document.getElementById("man");
 const key = document.getElementById("key");
 const ladder = document.getElementById("ladder");
 const shedd = document.getElementById("shedd");
-const FavNr = document.getElementById("FavNr");
-FavNr.style.visibility = "Hidden";
+const shovel = document.getElementById("shovel");
+const nr = document.querySelector("#nr");
+const Nr = document.querySelector(".Nr");
+shovel.style.visibility = "Hidden";
 
 woods.addEventListener("click", function (event) {
   box.style.backgroundImage = "url('example.jpg')";
@@ -21,7 +23,7 @@ woods.addEventListener("click", function (event) {
   man.style.visibility = "hidden";
   shedd.style.visibility = "hidden";
   ladder.style.visibility = "hidden";
-  FavNr.style.visibility = "Hidden";
+  shovel.style.visibility = "Hidden";
 });
 main.addEventListener("click", function (event) {
   box.style.backgroundImage = "url('mainexample.jpg')";
@@ -34,7 +36,7 @@ main.addEventListener("click", function (event) {
 
   key.style.visibility = "hidden";
   ladder.style.visibility = "hidden";
-  FavNr.style.visibility = "Hidden";
+  shovel.style.visibility = "Hidden";
 });
 water.addEventListener("click", function (event) {
   box.style.backgroundImage = "url('waterexample.jpg')";
@@ -46,7 +48,7 @@ water.addEventListener("click", function (event) {
   shedd.style.visibility = "hidden";
   man.style.visibility = "hidden";
   key.style.visibility = "hidden";
-  FavNr.style.visibility = "Hidden";
+  shovel.style.visibility = "Hidden";
 });
 
 function help() {
@@ -63,7 +65,9 @@ function help() {
 function getRandomInt(min, max) {
   min = Math.ceil(0);
   max = Math.floor(100);
-  return Math.floor(Math.random() * (max - min) + min);
+  var x = Math.floor(Math.random() * (max - min) + min);
+  localStorage.setItem("rn", x);
+  return x;
 }
 
 function LadderQuest() {
@@ -90,10 +94,11 @@ function OpenShedd() {
       "Its open! Tell them that its open!";
     document.querySelector(".item").innerHTML = "Lock";
   } else if (document.querySelector(".item").innerHTML == "Lock") {
+    var yourName = prompt("what is your name?");
     document.querySelector(".textbox").innerHTML =
-      "Flipp the shovel and see if you completed the game";
+      "Congrats, " + yourName + ", you have completed the game!";
     box.style.backgroundImage = "url('example.jpg')";
-    FavNr.style.visibility = "visible";
+    shovel.style.visibility = "visible";
     shedd.style.visibility = "hidden";
     man.style.visibility = "hidden";
     key.style.visibility = "hidden";
@@ -102,5 +107,8 @@ function OpenShedd() {
     document.querySelector(".textbox").innerHTML = "Cant get in without a key";
   }
 }
+Nr.addEventListener("click", function (event) {
+  document.querySelector("#nr").innerHTML = localStorage.getItem("rn");
+});
 
-console.log();
+console.log("box");
