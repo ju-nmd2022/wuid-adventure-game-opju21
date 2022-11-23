@@ -14,11 +14,11 @@ const Nr = document.querySelector(".Nr");
 shovel.style.visibility = "Hidden";
 
 woods.addEventListener("click", function (event) {
-  box.style.backgroundImage = "url('example.jpg')";
+  box.style.backgroundImage = "url('woods.jpg')";
 
   key.style.visibility = "visible";
 
-  key.style.backgroundImage = "url('waterexample.jpg')";
+  key.style.backgroundImage = "url('key.png')";
 
   man.style.visibility = "hidden";
   shedd.style.visibility = "hidden";
@@ -26,24 +26,24 @@ woods.addEventListener("click", function (event) {
   shovel.style.visibility = "Hidden";
 });
 main.addEventListener("click", function (event) {
-  box.style.backgroundImage = "url('mainexample.jpg')";
+  box.style.backgroundImage = "url('main.jpg')";
 
   man.style.visibility = "visible";
   shedd.style.visibility = "visible";
 
-  man.style.backgroundImage = "url('example.jpg')";
-  shedd.style.backgroundImage = "url('example.jpg')";
+  man.style.backgroundImage = "url('man.png')";
+  shedd.style.backgroundImage = "url('shedd.png')";
 
   key.style.visibility = "hidden";
   ladder.style.visibility = "hidden";
   shovel.style.visibility = "Hidden";
 });
 water.addEventListener("click", function (event) {
-  box.style.backgroundImage = "url('waterexample.jpg')";
+  box.style.backgroundImage = "url('water.jpg')";
 
   ladder.style.visibility = "visible";
 
-  ladder.style.backgroundImage = "url('mainexample.jpg')";
+  ladder.style.backgroundImage = "url('ladder.png')";
 
   shedd.style.visibility = "hidden";
   man.style.visibility = "hidden";
@@ -97,8 +97,9 @@ function OpenShedd() {
     var yourName = prompt("what is your name?");
     document.querySelector(".textbox").innerHTML =
       "Congrats, " + yourName + ", you have completed the game!";
-    box.style.backgroundImage = "url('example.jpg')";
+    box.style.backgroundImage = "url('shedd.jpg')";
     shovel.style.visibility = "visible";
+    shovel.style.backgroundImage = "url('shovel.png')";
     shedd.style.visibility = "hidden";
     man.style.visibility = "hidden";
     key.style.visibility = "hidden";

@@ -69,7 +69,6 @@ body {
 }
 
 #shovel {
-  background-color: rgb(246, 215, 250);
   padding-left: 10px;
   padding-top: 10px;
   width: 100px;
@@ -84,7 +83,7 @@ body {
   height: 100px;
   position: fixed;
   top: 500px;
-  left: 750px;
+  left: 700px;
 }
 
 #shedd {
@@ -107,5 +106,5 @@ body {
   height: 30px;
   position: fixed;
   top: 350px;
-  left: 500px;
+  left: 520px;
 }
